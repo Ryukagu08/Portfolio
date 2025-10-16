@@ -1,8 +1,8 @@
 .footer {
-  background-color: #1a1a1a;
+  background-color: var(--color-bg-primary);
   padding: 2rem 0;
   margin-top: 4rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--color-bg-tertiary);
 }
 
 .footer-container {
@@ -21,7 +21,7 @@
 
 .footer-content p {
   margin: 0;
-  color: #888;
+  color: var(--color-text-muted);
 }
 
 .social-links {
@@ -30,13 +30,13 @@
 }
 
 .social-links a {
-  color: #646cff;
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #535bf2;
+  color: var(--color-hover);
 }
 
 @media (max-width: 768px) {

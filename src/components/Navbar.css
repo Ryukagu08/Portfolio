@@ -48,7 +48,7 @@
 }
 
 .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--color-hover);
 }
 
 @media (max-width: 768px) {

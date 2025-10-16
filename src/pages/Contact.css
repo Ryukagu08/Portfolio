@@ -1,7 +1,7 @@
 .contact {
   min-height: 100vh;
   padding: 6rem 2rem 4rem;
-  background-color: #1a1a1a;
+  background-color: var(--color-bg-primary);
 }
 
 .contact-container {
@@ -11,7 +11,7 @@
 
 .contact-intro {
   text-align: center;
-  color: #ccc;
+  color: var(--color-text-secondary);
   font-size: 1.1rem;
   margin-bottom: 3rem;
 }
@@ -36,17 +36,17 @@
 }
 
 .form-group label {
-  color: #fff;
+  color: var(--color-text-primary);
   font-weight: 500;
 }
 
 .form-group input,
 .form-group textarea {
   padding: 0.8rem;
-  background-color: #242424;
-  border: 1px solid #333;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
   border-radius: 6px;
-  color: #fff;
+  color: var(--color-text-primary);
   font-size: 1rem;
   font-family: inherit;
   transition: border-color 0.3s;
@@ -55,7 +55,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #646cff;
+  border-color: var(--color-primary);
 }
 
 .form-group textarea {
@@ -64,8 +64,8 @@
 
 .submit-button {
   padding: 1rem 2rem;
-  background-color: #646cff;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
   border: none;
   border-radius: 6px;
   font-size: 1rem;
@@ -75,27 +75,27 @@
 }
 
 .submit-button:hover {
-  background-color: #535bf2;
+  background-color: var(--color-active);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(100, 108, 255, 0.4);
+  box-shadow: 0 5px 15px var(--shadow-primary);
 }
 
 .contact-info {
-  background-color: #242424;
+  background-color: var(--color-bg-secondary);
   padding: 2rem;
   border-radius: 8px;
   height: fit-content;
-  border: 1px solid #333;
+  border: 1px solid var(--color-bg-tertiary);
 }
 
 .contact-info h3 {
-  color: #646cff;
+  color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 .contact-info p {
-  color: #ccc;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -108,18 +108,18 @@
 }
 
 .info-item strong {
-  color: #fff;
+  color: var(--color-text-primary);
   font-size: 0.9rem;
 }
 
 .info-item span,
 .info-item a {
-  color: #aaa;
+  color: var(--color-text-muted);
   text-decoration: none;
 }
 
 .info-item a:hover {
-  color: #646cff;
+  color: var(--color-hover);
 }
 
 @media (max-width: 768px) {

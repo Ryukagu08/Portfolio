@@ -1,7 +1,7 @@
 .about {
   min-height: 100vh;
   padding: 6rem 2rem 4rem;
-  background-color: #1a1a1a;
+  background-color: var(--color-bg-primary);
 }
 
 .about-container {
@@ -11,7 +11,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--color-text-primary);
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
@@ -22,7 +22,7 @@
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #646cff;
+  background-color: var(--color-primary);
   margin: 1rem auto 0;
   border-radius: 2px;
 }
@@ -35,14 +35,14 @@
 }
 
 .about-text p {
-  color: #ccc;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
 
 .about-skills h3 {
-  color: #fff;
+  color: var(--color-text-primary);
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
@@ -54,19 +54,19 @@
 }
 
 .skill-item {
-  background-color: #242424;
+  background-color: var(--color-bg-secondary);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  color: #fff;
-  border: 1px solid #333;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-bg-tertiary);
   transition: all 0.3s;
 }
 
 .skill-item:hover {
-  border-color: #646cff;
+  border-color: var(--color-primary);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(100, 108, 255, 0.2);
+  box-shadow: 0 5px 15px var(--shadow-secondary);
 }
 
 @media (max-width: 768px) {

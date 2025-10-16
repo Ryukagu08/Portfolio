@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: var(--gradient-background);
+  background: var(--gradient-bg);
 }
 
 .home-container {
@@ -38,7 +38,7 @@
 
 .home-description {
   font-size: 1.1rem;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-muted);
   max-width: 600px;
   margin: 0 auto 2rem;
   line-height: 1.6;
@@ -67,9 +67,9 @@
 }
 
 .cta-button.primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-active);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px var(--shadow-tertiary);
+  box-shadow: 0 5px 15px var(--shadow-primary);
 }
 
 .cta-button.secondary {
