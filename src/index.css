@@ -6,13 +6,63 @@
 }
 
 :root {
+  /* =============================================== */
+  /* 🎨 COLOR PALETTE - Portfolio Theme            */
+  /* =============================================== */
+  
+  /* Primary Colors - Brand & Accent */
+  --color-primary: #646cff;
+  --color-primary-dark: #535bf2;
+  --color-primary-light: #7c83ff;
+  
+  /* Background Colors */
+  --color-bg-primary: #1a1a1a;      /* Main dark background */
+  --color-bg-secondary: #242424;    /* Cards, secondary sections */
+  --color-bg-tertiary: #333333;     /* Borders, subtle elements */
+  
+  /* Text Colors */
+  --color-text-primary: #ffffff;    /* Main headings */
+  --color-text-secondary: #cccccc;  /* Body text, descriptions */
+  --color-text-tertiary: #aaaaaa;   /* Muted text, labels */
+  --color-text-quaternary: #888888; /* Very subtle text */
+  
+  /* Interactive States */
+  --color-hover: var(--color-primary-dark);
+  --color-focus: var(--color-primary);
+  --color-active: var(--color-primary-dark);
+  
+  /* Status Colors */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: var(--color-primary);
+  
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --gradient-background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  
+  /* Shadow Colors */
+  --shadow-primary: rgba(100, 108, 255, 0.3);
+  --shadow-secondary: rgba(100, 108, 255, 0.2);
+  --shadow-tertiary: rgba(100, 108, 255, 0.4);
+  --shadow-dark: rgba(0, 0, 0, 0.1);
+  
+  /* Border Colors */
+  --color-border-primary: var(--color-bg-tertiary);
+  --color-border-secondary: var(--color-primary);
+  --color-border-tertiary: rgba(255, 255, 255, 0.1);
+  
+  /* =============================================== */
+  /* 📱 TYPOGRAPHY & LAYOUT                        */
+  /* =============================================== */
+  
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a1a;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,13 +89,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--color-primary-dark);
 }
 
 button {
@@ -60,6 +110,6 @@ html {
 
 /* Selection styles */
 ::selection {
-  background-color: #646cff;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
 }

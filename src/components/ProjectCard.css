@@ -1,24 +1,24 @@
 .project-card {
-  background-color: #242424;
+  background-color: var(--color-bg-secondary);
   border-radius: 8px;
   padding: 2rem;
   transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #333;
+  border: 1px solid var(--color-border-primary);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(100, 108, 255, 0.3);
+  box-shadow: 0 5px 20px var(--shadow-primary);
 }
 
 .project-card h3 {
-  color: #646cff;
+  color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 .project-description {
-  color: #ccc;
+  color: var(--color-text-secondary);
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -31,8 +31,8 @@
 }
 
 .tech-tag {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -44,15 +44,15 @@
 }
 
 .project-link {
-  color: #646cff;
+  color: var(--color-primary);
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border: 1px solid #646cff;
+  border: 1px solid var(--color-border-secondary);
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .project-link:hover {
-  background-color: #646cff;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
 }
