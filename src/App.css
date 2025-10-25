@@ -4,7 +4,7 @@
 }
 
 main {
-  padding-top: 70px; /* Account for fixed navbar */
+  padding-top: 0; /* Increase to 70px to account for navbar if needed */
 }
 
 /* Global utilities */
@@ -21,7 +21,7 @@ main {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: var(--color-primary);
+  background-color: var(--color-text-primary);
   margin: 1rem auto 0;
   border-radius: 2px;
 }

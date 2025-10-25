@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, technologies, demoLink, codeLink }) =
       <div className="project-links">
         {demoLink && (
           <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-link">
-            Live Demo
+            View Project
           </a>
         )}
         {codeLink && (

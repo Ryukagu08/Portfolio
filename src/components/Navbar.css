@@ -1,10 +1,14 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--color-bg-primary);
-  box-shadow: 0 2px 10px var(--shadow-dark);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  background: color-mix(in srgb, var(--color-bg-primary) 80%, transparent);
+  backdrop-filter: blur(10px) brightness(0.8);
+  -webkit-backdrop-filter: blur(10px) brightness(0.8);
+  border-radius: 8px;
+  border-bottom: #2e2e2e 1px solid;
   z-index: 1000;
   padding: 1rem 0;
 }
@@ -16,6 +20,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  translate: 0 3px;
 }
 
 .nav-logo h2 {

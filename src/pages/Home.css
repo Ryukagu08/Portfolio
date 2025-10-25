@@ -4,16 +4,27 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: var(--gradient-bg);
 }
 
 .home-container {
   max-width: 1200px;
   width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .home-content {
-  text-align: center;
+  text-align: left;
+  grid-column: 1;
+}
+
+.home-logo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  grid-column: 2;
+  place-self: center;
+  box-shadow: 0 0 60px var(--shadow-primary);
 }
 
 .home-title {
@@ -40,14 +51,14 @@
   font-size: 1.1rem;
   color: var(--color-text-muted);
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 0 2rem;
   line-height: 1.6;
 }
 
 .home-cta {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
@@ -82,6 +93,7 @@
   background-color: var(--color-primary);
   color: var(--color-text-primary);
 }
+
 
 @media (max-width: 768px) {
   .home-title {

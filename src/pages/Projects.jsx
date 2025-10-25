@@ -4,25 +4,24 @@ import './Projects.css';
 const Projects = () => {
   const projectsData = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online shopping platform with cart functionality, product filtering, and secure checkout process.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project1'
+      title: 'Spectre Memorial Site',
+      description: 'A fan made memorial site built to honor Spectre Divide, featuring game info, and media galleries and more.',
+      technologies: ['HTML', 'JavaScript', 'Python'],
+      demoLink: 'https://spectre-memorial.vercel.app/',
+      codeLink: 'https://github.com/Ryukagu08/SpectreMemorial-Site'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application that displays current conditions and forecasts using external API integration.',
-      technologies: ['React', 'API', 'CSS', 'JavaScript'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project2'
+      title: 'PCsCalatayud Project',
+      description: 'A custom PC building service project built and designed for a school assignment.',
+      technologies: ['React', 'Firebase', 'JavaScript','Vite'],
+      demoLink: 'https://pcs-calatayud.vercel.app',
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task tracker with drag-and-drop functionality, user authentication, and real-time updates.',
-      technologies: ['React', 'Firebase', 'Material-UI', 'Context API'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/yourusername/project3'
+      title: 'This Portfolio',
+      description: 'My personal portfolio website showcasing my projects, skills, and contact information.',
+      technologies: ['React', 'JavaScript', 'Vite'],
+      demoLink: 'https://ryukagu.vercel.app/',
+      codeLink: 'https://github.com/Ryukagu08/Portfolio'
     }
   ];
 

@@ -1,4 +1,5 @@
 import './Home.css';
+import LogoSilver from '../assets/LogoSilver.webp';
 
 const Home = () => {
   return (
@@ -6,12 +7,13 @@ const Home = () => {
       <div className="home-container">
         <div className="home-content">
           <h1 className="home-title">
-            Hi, I'm <span className="highlight">Your Name</span>
+            Probably Over-Engineering It
           </h1>
           <p className="home-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
           <p className="home-description">
-            I build modern web applications with a focus on clean code, 
-            great user experiences, and innovative solutions.
+            Hi, I'm Roberto Ghita, also known as Ryu. I love building 
+            modern and intuitive web applications with a focus on clean code and visual appeal. 
+            My passion lies in crafting great user experiences, and innovative solutions.
           </p>
           <div className="home-cta">
             <button 
@@ -28,6 +30,7 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <img src={LogoSilver} alt="Logo Silver" className='home-logo' />
       </div>
     </section>
   );

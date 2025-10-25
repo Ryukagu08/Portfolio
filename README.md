@@ -1,43 +1,79 @@
-# 🚀 Personal Portfolio - React + Vite
+# 🚀 Roberto Ghita - Portfolio
 
-A modern, responsive personal portfolio website built with React and Vite. Features a clean single-page design with smooth scrolling navigation.
+A modern, responsive personal portfolio website showcasing web development projects and skills. Built with React and Vite, featuring a clean single-page design with smooth scrolling navigation and a professional dark theme.
+
+**Live Site:** [https://ryukagu.vercel.app](https://ryukagu.vercel.app)
 
 ## 📋 Project Structure
 
 ```
-my-portfolio/
+Portfolio/
 ├── src/
 │   ├── components/          # Reusable UI components
-│   │   ├── Navbar.jsx
+│   │   ├── Navbar.jsx       # Fixed navigation with glassmorphism
 │   │   ├── Navbar.css
-│   │   ├── Footer.jsx
+│   │   ├── Footer.jsx       # Footer with social links
 │   │   ├── Footer.css
-│   │   ├── ProjectCard.jsx
+│   │   ├── ProjectCard.jsx  # Reusable project card
 │   │   └── ProjectCard.css
-│   ├── pages/               # Main sections
-│   │   ├── Home.jsx
+│   ├── pages/               # Main page sections
+│   │   ├── Home.jsx         # Hero section with CTA
 │   │   ├── Home.css
-│   │   ├── About.jsx
+│   │   ├── About.jsx        # Bio and skills grid
 │   │   ├── About.css
-│   │   ├── Projects.jsx
+│   │   ├── Projects.jsx     # Project showcase
 │   │   ├── Projects.css
-│   │   ├── Contact.jsx
+│   │   ├── Contact.jsx      # Contact form with EmailJS
 │   │   └── Contact.css
-│   ├── App.jsx              # Main layout
-│   ├── App.css
-│   ├── main.jsx             # Entry point
-│   └── index.css            # Global styles
-├── public/                  # Static assets
-├── index.html
-└── package.json
+│   ├── data/
+│   │   └── skills.jsx       # Centralized skills data with SVG icons
+│   ├── assets/
+│   │   └── LogoSilver.webp  # Profile logo
+│   ├── App.jsx              # Main layout component
+│   ├── App.css              # Global app styles
+│   ├── main.jsx             # Application entry point
+│   └── index.css            # Global CSS with design system
+├── public/
+│   └── vite.svg             # Favicon
+├── index.html               # HTML template with meta tags
+├── vercel.json              # Vercel deployment config
+└── package.json             # Dependencies and scripts
 ```
 
 ## 🛠️ Tech Stack
 
-- **React** - UI library (functional components)
-- **Vite** - Build tool & dev server
-- **Plain CSS** - Styling (no frameworks)
-- **JavaScript** - No TypeScript
+- **React 19.1.1** - Modern UI library with functional components
+- **Vite 7.1.7** - Lightning-fast build tool and dev server
+- **EmailJS** - Contact form email service integration
+- **Pure CSS** - Custom styling with CSS variables (no frameworks)
+- **JavaScript** - ES6+ features, no TypeScript
+- **Vercel** - Deployment platform
+
+## ✨ Features
+
+### Design System
+- 🎨 **Professional Dark Theme** - Purple accent color (`#8951ff`)
+- 🎯 **CSS Variables** - Centralized theming system for easy customization
+- 📱 **Fully Responsive** - Mobile-first design, breakpoint at 768px
+- ✨ **Glassmorphism Effects** - Modern UI with backdrop blur on navbar
+- 🎭 **Custom Scrollbar** - Styled to match the theme
+- 🌈 **Smooth Animations** - Hover effects, transitions, and scroll behavior
+
+### Components & Sections
+- 🧭 **Fixed Navigation** - Smooth scroll to sections, 65% width centered layout
+- 🏠 **Hero Section** - Introduction with call-to-action buttons
+- 👤 **About Section** - Bio with skills grid featuring 9 technologies (HTML/CSS, JavaScript, React, Node.js, Python, C#, Docker, Git, Firebase)
+- 💼 **Projects Showcase** - 3 featured projects with technology tags and live demo links
+- 📧 **Contact Form** - Fully functional with EmailJS integration, loading states, and validation
+- 🔗 **Footer** - Copyright and social media links
+
+### Technical Features
+- ⚡ **Single Page Application** - No routing, all sections on one page
+- 🔄 **Smooth Scrolling** - JavaScript-powered navigation
+- 📦 **Component-Based Architecture** - Reusable, maintainable components
+- 🎪 **SVG Icon Integration** - Custom skill icons embedded in JSX
+- 🔌 **Environment Variables** - Secure EmailJS configuration
+- 🚀 **Optimized Performance** - Vite bundling and code splitting
 
 ## 🚦 Getting Started
 
@@ -47,131 +83,163 @@ my-portfolio/
 
 ### Installation
 
-1. Clone the repository or navigate to the project folder
-2. Install dependencies:
+1. Clone the repository:
+```bash
+git clone https://github.com/Ryukagu08/Portfolio.git
+cd Portfolio
+```
 
+2. Install dependencies:
 ```bash
 npm install
 ```
 
 ### Development
 
-Run the development server with hot module replacement:
-
+Start the development server with hot module replacement:
 ```bash
 npm run dev
 ```
-
 The site will be available at `http://localhost:5173`
 
 ### Build for Production
 
 Create an optimized production build:
-
 ```bash
 npm run build
 ```
-
 This generates a `dist/` folder ready for deployment.
 
 ### Preview Production Build
 
 Test the production build locally:
-
 ```bash
 npm run preview
 ```
 
-## 📦 Deployment (Vercel)
+### Linting
 
-### Option 1: Deploy via GitHub
+Run ESLint to check code quality:
+```bash
+npm run lint
+```
+
+## 📦 Deployment
+
+This project is configured for Vercel deployment with automatic builds on push.
+
+### Vercel (Recommended)
 1. Push your code to GitHub
-2. Go to [Vercel](https://vercel.com)
-3. Import your repository
-4. Vercel auto-detects Vite configuration
-5. Click Deploy
+2. Import repository in [Vercel Dashboard](https://vercel.com)
+3. Vercel auto-detects Vite configuration
+4. Deploy automatically
 
-### Option 2: Deploy via CLI
+**Current deployment:** [https://ryukagu.vercel.app](https://ryukagu.vercel.app)
+
+### Manual Deployment
 ```bash
 npm install -g vercel
 vercel
 ```
 
-### Build Settings (auto-configured)
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist`
-- **Install Command:** `npm install`
+## 🎨 Customization Guide
 
-## ✨ Features
+### Updating Personal Information
 
-- **Responsive Design** - Works on all devices
-- **Smooth Scrolling** - Anchor-based navigation
-- **Modern UI** - Clean, professional design
-- **Component-Based** - Reusable React components
-- **Easy to Customize** - Well-organized file structure
-- **Fast Performance** - Optimized with Vite
+**Home Section** (`src/pages/Home.jsx`)
+- Update name, tagline, and introduction text
+- Modify CTA button text and scroll targets
 
-## 🎨 Customization
+**About Section** (`src/pages/About.jsx`)
+- Edit biography paragraphs
+- Skills are imported from `src/data/skills.jsx`
 
-### Update Personal Information
+**Projects Section** (`src/pages/Projects.jsx`)
+- Modify the `projectsData` array:
+```jsx
+const projectsData = [
+  {
+    title: 'Project Name',
+    description: 'Brief description...',
+    technologies: ['React', 'CSS', 'JavaScript'],
+    demoLink: 'https://demo-url.com',
+    codeLink: 'https://github.com/username/repo' // Optional
+  }
+];
+```
 
-1. **Home Section** (`src/pages/Home.jsx`)
-   - Change your name in the title
-   - Update subtitle and description
+**Contact Section** (`src/pages/Contact.jsx`)
+- Update email address and location
+- EmailJS configuration uses environment variables
 
-2. **About Section** (`src/pages/About.jsx`)
-   - Edit the about text
-   - Update skills array
+**Footer** (`src/components/Footer.jsx`)
+- Update social media links (GitHub, LinkedIn, Twitter)
 
-3. **Projects Section** (`src/pages/Projects.jsx`)
-   - Modify `projectsData` array with your projects
-   - Add project images if needed
+### Design System Customization
 
-4. **Contact Section** (`src/pages/Contact.jsx`)
-   - Update email and location
-   - Connect form to backend service (optional)
+All colors are defined as CSS variables in `src/index.css`:
+```css
+:root {
+  --color-primary: #8951ff;         /* Main purple accent */
+  --color-bg-primary: #0a0a1a;      /* Deep dark background */
+  --color-bg-secondary: #121224;    /* Cards and sections */
+  --color-text-primary: #ffffff;    /* Main text */
+  /* ... more variables */
+}
+```
 
-5. **Footer** (`src/components/Footer.jsx`)
-   - Update social media links
+Modify these variables to change the entire theme instantly.
 
-### Styling
+## 📧 Contact Form Setup
 
-Each component has its own CSS file for easy styling adjustments:
-- Colors, fonts, spacing can be modified in component CSS files
-- Global styles are in `src/index.css`
+The contact form uses EmailJS. To set up your own:
+
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service and template
+3. Set environment variables (create `.env` file):
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
 ## 📝 Available Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
+| `npm run dev` | Start development server (port 5173) |
+| `npm run build` | Build for production to `dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint code quality checks |
 
 ## 🌐 Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome (latest) ✅
+- Firefox (latest) ✅
+- Safari (latest) ✅
+- Edge (latest) ✅
+- Mobile browsers ✅
+
+## 🏗️ Architecture Decisions
+
+- **No Routing**: Single-page design with smooth scroll navigation
+- **Component Scoping**: Each component has its own CSS file
+- **Functional Components**: Modern React hooks, no class components
+- **Props Destructuring**: Clean component APIs
+- **Centralized Data**: Skills and projects defined in data files
+- **CSS Variables**: Consistent theming across all components
 
 ## 📄 License
 
-MIT License - feel free to use this for your own portfolio!
+MIT License - Feel free to use this project as a template for your own portfolio.
 
-## 🤝 Contributing
+## 🤝 Author
 
-This is a personal portfolio template. Feel free to fork and customize for your own use.
+**Roberto Ghita (Ryu)**
+- Portfolio: [https://ryukagu.vercel.app](https://ryukagu.vercel.app)
+- Email: ryu.businesscontact@gmail.com
+- GitHub: [@Ryukagu08](https://github.com/Ryukagu08)
 
 ---
 
-Built with ❤️ using React + Vite
-
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built with ❤️ using React + Vite | *"Probably Over-Engineering It"*
