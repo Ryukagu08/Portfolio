@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  padding-top: 0;
 }
 
 .home-container {
@@ -117,6 +118,11 @@
 }
 
 @media (max-width: 620px) {
+  .home {
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
   .home-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -145,10 +151,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .home-logo {
     width: 150px;
-    margin-top: -2rem;
   }
 
   .home-title {
