@@ -94,6 +94,9 @@
   color: var(--color-text-primary);
 }
 
+@media (max-width: 1024px) {
+
+}
 
 @media (max-width: 768px) {
   .home-title {
@@ -106,5 +109,60 @@
 
   .home-description {
     font-size: 1rem;
+  }
+
+  .home-logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 620px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
+  .home-content {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .home-logo {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0 auto 1rem;
+  }
+
+  .home-description {
+    margin: 0 auto 2rem;
+  }
+
+  .home-cta {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-logo {
+    width: 150px;
+    margin-top: -2rem;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 45%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
   }
 }
