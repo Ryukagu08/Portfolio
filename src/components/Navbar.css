@@ -11,6 +11,19 @@
   border-bottom: #2e2e2e 1px solid;
   z-index: 1000;
   padding: 1rem 0;
+  animation: slideDown 0.5s ease forwards;
+  will-change: transform;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
 }
 
 .nav-container {
@@ -91,6 +104,18 @@
     border-bottom: none;
     top: auto;
     bottom: 0;
+    animation: slideUp 0.5s ease forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateX(-50%) translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
   }
 
   .nav-menu {
