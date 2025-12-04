@@ -25,7 +25,7 @@ const About = () => {
             <div className="skills-grid">
               {skills.map((skill, index) => (
                 <div key={index} className="skill-item">
-                  {skill.icon && <div className="skill-icon">{skill.icon}</div>}
+                  {skill.icon && <img src={skill.icon} alt={skill.name} className="skill-icon" />}
                   <span className="skill-name">{skill.name}</span>
                 </div>
               ))}
