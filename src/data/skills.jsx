@@ -7,38 +7,43 @@ import dockerIcon from '../assets/icons/docker.svg';
 import gitIcon from '../assets/icons/git.svg';
 import firebaseIcon from '../assets/icons/firebase.svg';
 import viteIcon from '../assets/icons/vite.svg';
+import svelteIcon from '../assets/icons/svelteIcon.svg';
 
 const skills = [
-  { 
-    name: 'HTML/CSS', 
+  {
+    name: 'HTML/CSS',
     icon: htmlCssIcon
   },
-  { 
-    name: 'JavaScript', 
+  {
+    name: 'JavaScript',
     icon: jsIcon
   },
-  { 
-    name: 'React', 
+  {
+    name: 'Svelte',
+    icon: svelteIcon
+  },
+  {
+    name: 'React',
     icon: reactIcon
   },
-  { 
-    name: 'Node.js', 
+  {
+    name: 'Node.js',
     icon: nodeIcon
   },
-  { 
-    name: 'Python', 
+  {
+    name: 'Python',
     icon: pythonIcon
   },
   // { 
   //   name: 'C#', 
   //   icon: csharpIcon 
   // },
-  { 
-    name: 'Docker', 
+  {
+    name: 'Docker',
     icon: dockerIcon
   },
-  { 
-    name: 'Git', 
+  {
+    name: 'Git',
     icon: gitIcon
   },
   {
