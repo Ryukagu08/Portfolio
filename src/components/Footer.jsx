@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="https://github.com/Ryukagu08/" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/roberto-ghita-854635387" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/robertoghita" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
             <a href="https://twitter.com/Ryukagu08" target="_blank" rel="noopener noreferrer">
